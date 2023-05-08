@@ -1,0 +1,149 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-box {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.balance p {
+  margin: 0;
+}
+
+.greeting-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.greeting-input input {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.change-button {
+  margin-left: 20px;
+}
+
+.refresh-button {
+  margin-left: 10px;
+}
+
+.start-screen {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .balance,
+  .greeting-input {
+    flex-direction: column;
+    text-align: center;
+  }
+  .balance p,
+  .greeting-input input {
+    margin: 10px 0;
+  }
+  .change-button {
+    margin: 20px 0 0;
+  }
+}
+
+select {
+  font-family: inherit;
+  font-size: 1em;
+  margin-left: 10px;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: none;
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+}
+select:hover,
+select:focus {
+  box-shadow: 0px 0px 5px rgba(100, 108, 255, 0.4);
+}
+
+.greeting-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  opacity: 1;
+}
+
+.greeting-input input {
+  flex: 1;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  padding: 8px;
+  font-size: 1em;
+}
+
+.greeting-input input:disabled {
+  background-color: #f0f0f0;
+  color: #777;
+  border-color: #d9d9d9;
+}
+
+.change-button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.change-button:hover:not(:disabled) {
+  background-color: #535bf2;
+}
+
+.change-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.refresh-button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+}
+.refresh-button:hover,
+.refresh-button:focus {
+  box-shadow: 0px 0px 5px rgba(100, 108, 255, 0.4);
+}
